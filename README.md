@@ -1,6 +1,6 @@
-# Exercises from Python for biologists
+# Exercises from *Python for biologists*
 
-This repository contains my solutions to the exercises from the book _Python for biologists_ (2013) by Martin Jones.
+This repository contains my solutions to the exercises from the book *Python for biologists* (2013) by Martin Jones.
 
 ## Stages
 * **Chapter 02:** Printing and manipulating text `Status: Ongoing`
@@ -11,6 +11,10 @@ This repository contains my solutions to the exercises from the book _Python for
 * **Chapter 07:** Regular expressions
 * **Chapter 08:** Dictionaries
 * **Chapter 09:** Files, programs and user input
+
+## Project management
+* [TODO.md](./TODO.md) tracks immediate refactoring tasks
+* [ROADMAP.md](./ROADMAP.md) tracks future plans and improvements
 
 ## How to run
 Requires Python 3
