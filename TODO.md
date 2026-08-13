@@ -3,8 +3,8 @@ This document tracks necessary improvements that fall within the scope of the ex
 # Exercise-specific
 ## Chapter 02: Printing and manipulating text
 ### Exercise 03: Restriction fragment lengths (`ex03_restriction_fragments.py`)
-- [ ] Improve core logic so restriction site isn't removed from sequence
-- [ ] Make code more readable by improving variable names  
+- [X] Improve core logic so restriction site isn't removed from sequence
+- [X] Make code more readable by improving variable names 
 
 
 # Repository-wide
