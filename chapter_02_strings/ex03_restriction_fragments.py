@@ -7,15 +7,16 @@ that will be produced when the sequence is digested with EcoRI
 
 seq = "ACTGATCGATTACGTATAGTAGAATTCTATCATACATATATATCGATGCGTTCAT"
 
-cut = seq.split("GAATTC")
-# The .split method removes "GAATTC" from the sequence
 
-# Add 1 and 5 to correct removed bases
-number_of_fragments = len(cut)
-length_frag1 = len(cut[0]) + 1
-length_frag2 = len(cut[1]) + 5
+# Addition of 1 corrects for Python's 0-based counting
+frag1 = seq.find("GAATTC") + 1
 
-# Prints number of fragments along with the length of each
+frag2 = len(seq) - frag1
+
+# This line can handle cases where there is more than one restriction site
+number_of_fragments = len(seq.split("GAATTC"))
+
+# Prints number of fragments along with the length of each one
 print(
-    f"The sequence has {number_of_fragments} fragments of length {length_frag1} and {length_frag2} respectively"
+    f"The sequence has {number_of_fragments} fragments of length {frag1} and {frag2} respectively"
 )
