@@ -9,3 +9,4 @@ This document tracks necessary improvements that fall within the scope of the ex
 
 # Repository-wide
 - [ ] Add unit testing?
+- [ ] Format all/most outputs as f-strings?
