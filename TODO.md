@@ -5,7 +5,8 @@ This document tracks necessary improvements that fall within the scope of the ex
 ### Exercise 03: Restriction fragment lengths (`ex03_restriction_fragments.py`)
 - [X] Improve core logic so restriction site isn't removed from sequence
 - [X] Make code more readable by improving variable names 
-
+### Exercise 04: Splicing out introns (`ex04_splicing_out_introns.py`)
+- [ ] Improve output format
 
 # Repository-wide
 - [ ] Add unit testing?
