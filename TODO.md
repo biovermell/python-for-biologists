@@ -7,6 +7,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [X] Make code more readable by improving variable names 
 ### Exercise 04: Splicing out introns (`ex04_splicing_out_introns.py`)
 - [ ] Improve output format
+- [ ] Resolve discrepancy between results from my solution and the textbook's solution
 
 # Repository-wide
 - [ ] Add unit testing?
