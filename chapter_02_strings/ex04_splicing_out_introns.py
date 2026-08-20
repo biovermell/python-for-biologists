@@ -9,12 +9,13 @@ The first exon runs from the start of the sequence to the 63rd character, and th
 the end of the sequence
 """
 
-# PART ONE
-
 seq = "ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
+
+# PART ONE
 
 exon1 = seq[0:63]
 exon2 = seq[90:]
+intron = seq[63:90]
 
 coding_region = exon1 + exon2
 
@@ -24,4 +25,11 @@ print(coding_region)
 
 coding_percentage = (len(coding_region) * 100) / len(seq)
 
-print(coding_percentage)
+# Formated to show two decimal places
+print(f"{coding_percentage:.2f}%")
+
+# PART THREE
+
+upper_and_lowercase = exon1 + intron.lower() + exon2
+
+print(upper_and_lowercase)
