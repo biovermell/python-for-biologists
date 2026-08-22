@@ -9,6 +9,10 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Improve output format
 - [ ] Resolve discrepancy between results from my solution and the textbook's solution
 
+## Chapter 03: Reading and writing files
+### Exercise 01: Splitting genomic DNA (`ex01_splitting_genomic_dna.py`)
+- [ ] Turn top-down script into functions?
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
