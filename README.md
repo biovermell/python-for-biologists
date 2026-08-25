@@ -3,8 +3,8 @@
 This repository contains my solutions to the exercises from the book *Python for biologists* (2013) by Martin Jones.
 
 ## Stages
-* **Chapter 02:** Printing and manipulating text `Status: Ongoing`
-* **Chapter 03:** Reading and writing files
+* **Chapter 02:** Printing and manipulating text `Status: Completed`
+* **Chapter 03:** Reading and writing files `Status: Ongoing`
 * **Chapter 04:** Lists and loops
 * **Chapter 05:** Writing our own functions
 * **Chapter 06:** Conditional tests
