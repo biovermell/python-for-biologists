@@ -12,6 +12,10 @@ This document tracks necessary improvements that fall within the scope of the ex
 ## Chapter 03: Reading and writing files
 ### Exercise 01: Splitting genomic DNA (`ex01_splitting_genomic_dna.py`)
 - [ ] Turn top-down script into functions?
+### Exercise 02: Writing FASTA files (`ex02_writing_fasta_files.py`)
+- [ ] Turn top-down script into functions
+- [ ] Improve sequence cleaning logic to truly ensure that only valid bases are present in the sequence instead of just removing the dashes
+- [ ] Fix script so sequences aren't hardcoded?
 
 # Repository-wide
 - [ ] Add unit testing?
