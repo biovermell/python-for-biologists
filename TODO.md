@@ -16,6 +16,10 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Turn top-down script into functions
 - [ ] Improve sequence cleaning logic to truly ensure that only valid bases are present in the sequence instead of just removing the dashes
 - [ ] Fix script so sequences aren't hardcoded?
+### Exercise 03: Writing multiple FASTA files (`ex03_writing_multiple_fasta_files.py`)
+- [ ] Turn top-down script into functions
+- [ ] Improve sequence cleaning logic to truly ensure that only valid bases are present in the sequence instead of just removing the dashes
+- [ ] Fix script so sequences aren't hardcoded?
 
 # Repository-wide
 - [ ] Add unit testing?
