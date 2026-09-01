@@ -23,7 +23,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 
 ## Chapter 04: Lists and loops
 ### Exercise 01: Processing DNA in a file (`ex03_processing_dna_in_a_file.py`)
-- [ ] Fix core logic so output file isn't overwritten in each iteration of the loop
+- [X] Fix core logic so output file isn't overwritten in each iteration of the loop
 - [ ] Turn nested code into functions
 - [ ] Improve variable names to make code more readable
 
