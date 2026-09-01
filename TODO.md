@@ -21,6 +21,12 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Improve sequence cleaning logic to truly ensure that only valid bases are present in the sequence instead of just removing the dashes
 - [ ] Fix script so sequences aren't hardcoded?
 
+## Chapter 04: Lists and loops
+### Exercise 01: Processing DNA in a file (`ex03_processing_dna_in_a_file.py`)
+- [ ] Fix core logic so output file isn't overwritten in each iteration of the loop
+- [ ] Turn nested code into functions
+- [ ] Improve variable names to make code more readable
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
