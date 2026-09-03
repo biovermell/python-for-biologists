@@ -22,10 +22,14 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Fix script so sequences aren't hardcoded?
 
 ## Chapter 04: Lists and loops
-### Exercise 01: Processing DNA in a file (`ex03_processing_dna_in_a_file.py`)
+### Exercise 01: Processing DNA in a file (`ex01_processing_dna_in_a_file.py`)
 - [X] Fix core logic so output file isn't overwritten in each iteration of the loop
 - [ ] Turn nested code into functions
 - [ ] Improve variable names to make code more readable
+### Exercise 02: Multiple exons from genomic DN (`ex02_multiple_exon_extraction.py`)
+- [ ] Turn nested code into functions
+- [ ] Resolve discrepancy between 0-based and 1-based indexing
+- [ ] Put file writing outside of loop (for better performance?)
 
 # Repository-wide
 - [ ] Add unit testing?
