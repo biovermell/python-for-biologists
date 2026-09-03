@@ -31,6 +31,12 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Resolve discrepancy between 0-based and 1-based indexing
 - [ ] Put file writing outside of loop (for better performance?)
 
+## Chapter 05: Functions
+### Exercise 01: percentage of aminoacid residues (`ex01_aminoacid_percentage.py`)
+- [ ] Fix typo in name of file (aminoacid -> amino acid)
+- [ ] Harmonize structure of multi-part exercise docstrings
+- [ ] Solve exercise
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
