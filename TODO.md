@@ -44,3 +44,6 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
 - [ ] Annotate all functions?
+
+# Docs
+- [ ] Link to corresponding exercises in TODO
