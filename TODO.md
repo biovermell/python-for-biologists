@@ -35,10 +35,12 @@ This document tracks necessary improvements that fall within the scope of the ex
 ### Exercise 01: percentage of aminoacid residues (`ex01_aminoacid_percentage.py`)
 - [X] Fix typo in name of file (aminoacid -> amino acid)
 - [X] Harmonize structure of multi-part exercise docstrings
-- [ ] Verify that helper function works as intended
+- [X] Verify that helper function works as intended
+- [ ] Write a working main function
 - [ ] Apply proper function annotation and type hinting, if deemed necessary
 - [ ] Improve variable names to make them coherent with biological terms (e.g. residue vs. aa) and within the code (e.g. uppercase_aa vs. upper_aa)
-- [ ] Write a working main function
+- [ ] Reduce big block of assertions - use pytest?
+
 
 # Repository-wide
 - [ ] Add unit testing?
