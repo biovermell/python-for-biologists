@@ -36,7 +36,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [X] Fix typo in name of file (aminoacid -> amino acid)
 - [X] Harmonize structure of multi-part exercise docstrings
 - [X] Verify that helper function works as intended
-- [ ] Write a working main function
+- [X] Write a working main function
 - [ ] Apply proper function annotation and type hinting, if deemed necessary
 - [ ] Improve variable names to make them coherent with biological terms (e.g. residue vs. aa) and within the code (e.g. uppercase_aa vs. upper_aa)
 - [ ] Reduce big block of assertions - use pytest?
