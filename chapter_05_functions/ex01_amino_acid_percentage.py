@@ -26,28 +26,31 @@ def uppercase_aa(aa):
     return upper_aa
 
 # MAIN FUNCTION
-#def amino_acid_percentage(prot_seq, aa=hydrophobic_aa):
-#    upper_prot_seq = prot_seq.upper()
-#    uppercase_aa(aa)
-#    residue_count = upper_prot_seq.count(residue)
-#    aa_percentage = (residue_count * 100) / len(upper_prot_seq)
-#    return aa_percentage
+def amino_acid_percentage(prot_seq, aa=hydrophobic_aa):
+    upper_prot_seq = prot_seq.upper()
+    upper_aa_main = uppercase_aa(aa)
+    aa_count = 0
+    for residue in upper_aa_main:
+        residue_count = upper_prot_seq.count(residue)
+        aa_count = aa_count + residue_count
+    aa_percentage = (aa_count * 100) / len(upper_prot_seq)
+    return aa_percentage
 
 
 # GIVEN ASSERTIONS
 # PART ONE
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "M") == 5
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "r") == 10
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "L") == 50
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "Y") == 0
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "M") == 5
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "r") == 10
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "L") == 50
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", "Y") == 0
 
 # PART TWO
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["M"]) == 5
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["M", "L"]) == 55
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["F", "S", "L"]) == 70
-#assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP") == 65
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["M"]) == 5
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["M", "L"]) == 55
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP", ["F", "S", "L"]) == 70
+assert amino_acid_percentage("MSRSLLLRFLLFLLLLPPLP") == 65
 
 # ASSERTIONS FOR HELPER FUNCTION
-assert uppercase_aa(["A", "B", "C"]) == ["A", "B", "C"]
-assert uppercase_aa(["A", "b", "C"]) == ["A", "B", "C"]
-assert uppercase_aa(["a", "b", "c"]) == ["A", "B", "C"]
+assert uppercase_aa(["M", "S", "R"]) == ["M", "S", "R"]
+assert uppercase_aa(["M", "s", "R"]) == ["M", "S", "R"]
+assert uppercase_aa(["m", "s", "r"]) == ["M", "S", "R"]
