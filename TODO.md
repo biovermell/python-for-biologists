@@ -26,7 +26,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [X] Fix core logic so output file isn't overwritten in each iteration of the loop
 - [ ] Turn nested code into functions
 - [ ] Improve variable names to make code more readable
-### Exercise 02: Multiple exons from genomic DN (`ex02_multiple_exon_extraction.py`)
+### Exercise 02: Multiple exons from genomic DNA (`ex02_multiple_exon_extraction.py`)
 - [ ] Turn nested code into functions
 - [ ] Resolve discrepancy between 0-based and 1-based indexing
 - [ ] Put file writing outside of loop (for better performance?)
@@ -41,11 +41,22 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Improve variable names to make them coherent with biological terms (e.g. residue vs. aa) and within the code (e.g. uppercase_aa vs. upper_aa)
 - [ ] Reduce big block of assertions - use pytest?
 
+## Chapter 06: Conditionals
+### Exercise 01: Several species (`ex01_several_species.py`)
+- [ ] Compare against textbook approach (give a name to each column, such as `species = columns[0]`) and decide which one is more efficient and readable
+- [ ] Look into csv module
+### Exercise 02: Length range (`ex02_length_range.py`)
+- [ ] Compare against textbook approach (give a name to each column, such as `species = columns[0]`) and decide which one is more efficient and readable
+- [ ] Ensure inequality covers correct range, without desired bases being excluded or undesired being included
+- [ ] Make inequality syntax cleaner
+- [ ] Check that script complies with PEP8
+
 
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
 - [ ] Annotate all functions?
+- [ ] Improve readability in all scripts by adding spaces and comments
 
 # Docs
 - [ ] Link to corresponding exercises in TODO
