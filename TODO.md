@@ -50,7 +50,9 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Ensure inequality covers correct range, without desired bases being excluded or undesired being included
 - [ ] Make inequality syntax cleaner
 - [ ] Check that script complies with PEP8
-
+### Exercise 03: AT content (`ex03_at_content.py`)
+- [ ] Make variable names self-explanatory
+- [ ] Check that script complies with PEP8
 
 # Repository-wide
 - [ ] Add unit testing?
