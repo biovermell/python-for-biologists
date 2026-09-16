@@ -4,10 +4,10 @@ This repository contains my solutions to the exercises from the book *Python for
 
 ## Stages
 * **Chapter 02:** Printing and manipulating text `Status: Completed`
-* **Chapter 03:** Reading and writing files `Status: Ongoing`
+* **Chapter 03:** Reading and writing files `Status: Completed`
 * **Chapter 04:** Lists and loops `Status: Completed`
-* **Chapter 05:** Writing our own functions `Status: Ongoing`
-* **Chapter 06:** Conditional tests
+* **Chapter 05:** Writing our own functions `Status: Completed`
+* **Chapter 06:** Conditional tests `Status: Completed`
 * **Chapter 07:** Regular expressions
 * **Chapter 08:** Dictionaries
 * **Chapter 09:** Files, programs and user input
