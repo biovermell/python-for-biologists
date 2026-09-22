@@ -26,3 +26,23 @@ accession_names = [
     "45da",
     "de37dp",
 ]
+
+
+def hardcoded_regex():
+    # a) contain the number 5
+    for name in accession_names:
+        if re.search(r"5", name):
+            print(f"{name} contains the number 5")
+
+    # b) contain the letter d or e
+    for name in accession_names:
+        if re.search(r"[de]", name):
+            print(f"{name} contains the letter d or e")
+
+    # b) contain the letters d and e in that order
+    for name in accession_names:
+        if re.search(r"[d.*e]", name):
+            print(f"{name} contains the letters d and e in that order")
+
+
+hardcoded_regex()
