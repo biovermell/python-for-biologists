@@ -54,6 +54,11 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Make variable names self-explanatory
 - [X] Check that script complies with PEP8
 
+## Chapter 07: Regular expressions
+### Exercise 01: Accession names (`ex01_accession_names.py`)
+- [ ] Solve exercise
+- [ ] Improve output format - either store hits in a list for every condition (e. g. "Contain the number 5: xkn59438, hedle3455, xjhd53e, 45da") or make scrip interactive (e. g. "Select condition" -> "The names that fulfill the condition {contain the number 5} are xkn59438, hedle3455, xjhd53e, 45da") and so on
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
