@@ -39,10 +39,42 @@ def hardcoded_regex():
         if re.search(r"[de]", name):
             print(f"{name} contains the letter d or e")
 
-    # b) contain the letters d and e in that order
+    # c) contain the letters d and e in that order
     for name in accession_names:
-        if re.search(r"[d.*e]", name):
+        if re.search(r"d.*e", name):
             print(f"{name} contains the letters d and e in that order")
+
+    # d) contain the letters d and e in that order with a single letter between them
+    for name in accession_names:
+        if re.search(r"d.e", name):
+            print(
+                f"{name} contains the letters d and e in that order with a single letter between them"
+            )
+
+    # e) contain both the letters d and e in any order
+    for name in accession_names:
+        if re.search(r"[d-e]", name):
+            print(f"{name} contains the letters d and e in any order")
+
+    # f) start with x or y
+    for name in accession_names:
+        if re.search(r"[^xy]", name):
+            print(f"{name} contains the letters d and e in any order")
+
+    # g) start with x or y and end with e
+    for name in accession_names:
+        if re.search(r"[^xy]", name):
+            print(f"{name} starts with x or y and end with e")
+
+    # h) contain three or more numbers in a row
+    for name in accession_names:
+        if re.search(r"[\d{3}]", name):
+            print(f"{name} contains three or more numbers in a row")
+
+    # i) end with d followed by either a, r or p
+    for name in accession_names:
+        if re.search(r"[$[apr]]", name):
+            print(f"{name} ends with d followed by either a, r or p")
 
 
 hardcoded_regex()
