@@ -58,6 +58,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 ### Exercise 01: Accession names (`ex01_accession_names.py`)
 - [ ] Solve exercise
 - [ ] Improve output format - either store hits in a list for every condition (e. g. "Contain the number 5: xkn59438, hedle3455, xjhd53e, 45da") or make scrip interactive (e. g. "Select condition" -> "The names that fulfill the condition {contain the number 5} are xkn59438, hedle3455, xjhd53e, 45da") and so on
+- [ ] Refactor so there aren't multiple loops in the code
 
 # Repository-wide
 - [ ] Add unit testing?
