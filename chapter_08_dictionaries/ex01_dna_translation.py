@@ -9,70 +9,26 @@ Note: To solve this exercise, I have used the same dna.txt file from ch07 ex02
 
 # DICTIONARY
 standard_code = {
-    "TTT": "F",
-    "TCT": "S",
-    "TAT": "Y",
-    "TGT": "C",
-    "TTA": "L",
-    "TCA": "S",
-    "TAA": "STOP",
-    "TGA": "STOP",
-    "TTG": "L",
-    "TCG": "S",
-    "TAG": "STOP",
-    "TGG": "W",
-    "CTT": "L",
-    "CCT": "P",
-    "CAT": "H",
-    "CGT": "R",
-    "CTC": "L",
-    "CCC": "P",
-    "CAC": "H",
-    "CGC": "R",
-    "CTA": "L",
-    "CCA": "P",
-    "CAA": "Q",
-    "CGA": "R",
-    "CTG": "L",
-    "CCG": "P",
-    "CAG": "Q",
-    "CGG": "R",
-    "ATT": "I",
-    "ACT": "T",
-    "AAT": "N",
-    "AGT": "S",
-    "ATC": "I",
-    "ACC": "T",
-    "AAC": "N",
-    "AGC": "S",
-    "ATA": "I",
-    "ACA": "T",
-    "AAA": "K",
-    "AGA": "R",
-    "ATG": "M",
-    "ACG": "T",
-    "AAG": "K",
-    "AGG": "R",
-    "GTT": "V",
-    "GCT": "A",
-    "GAT": "D",
-    "GGT": "G",
-    "GTC": "V",
-    "GCC": "A",
-    "GAC": "D",
-    "GGC": "G",
-    "GTA": "V",
-    "GCA": "A",
-    "GAA": "E",
-    "GGA": "G",
-    "GTG": "V",
-    "GCG": "A",
-    "GAG": "E",
-    "GGG": "G",
+    "TTT": "F", "TTC": "F", "TTA": "L", "TTG": "L",
+    "TCT": "S", "TCC": "S", "TCA": "S", "TCG": "S",
+    "TAT": "Y", "TAC": "Y", "TAA": "*", "TAG": "*",
+    "TGT": "C", "TGC": "C", "TGA": "*", "TGG": "W",
+    "CTT": "L", "CTC": "L", "CTA": "L", "CTG": "L",
+    "CCT": "P", "CCC": "P", "CCA": "P", "CCG": "P",
+    "CAT": "H", "CAC": "H", "CAA": "Q", "CAG": "Q",
+    "CGT": "R", "CGC": "R", "CGA": "R", "CGG": "R",
+    "ATT": "I", "ATC": "I", "ATA": "I", "ATG": "M",
+    "ACT": "T", "ACC": "T", "ACA": "T", "ACG": "T",
+    "AAT": "N", "AAC": "N", "AAA": "K", "AAG": "K",
+    "AGT": "S", "AGC": "S", "AGA": "R", "AGG": "R",
+    "GTT": "V", "GTC": "V", "GTA": "V", "GTG": "V",
+    "GCT": "A", "GCC": "A", "GCA": "A", "GCG": "A",
+    "GAT": "D", "GAC": "D", "GAA": "E", "GAG": "E",
+    "GGT": "G", "GGC": "G", "GGA": "G", "GGG": "G",
 }
 
 
-# HELPER FUNCTIONS
+# HELPER FUNCTION
 def codon_checker(seq):
     if len(seq) % 3 == 0:
         return seq
@@ -86,19 +42,15 @@ def codon_checker(seq):
 # CORE LOGIC
 def dna_translation(seq):
     seq = codon_checker(seq)
-    number_of_codons = len(seq) - (len(seq) % 3)
-    codon_list = []
     protein = ""
-    for number in range(0, number_of_codons, 3):
-        codon_list.append(seq[number : number + 3])
-    for codon in codon_list:
-        aa = standard_code.get(codon)
+    for number in range(0, len(seq), 3):
+        codon = seq[number : number + 3]
+        aa = standard_code.get(codon, "X")
         protein += aa
     print(f"The amino acid sequence is {protein}")
 
 
 # EXECUTION
 with open("dna.txt", "r") as infile:
-    seq = infile.readline().strip()
-    codon_checker(seq)
+    seq = infile.readline().strip().upper()
     dna_translation(seq)
