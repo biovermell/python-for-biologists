@@ -65,6 +65,11 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [X] Ensure regex structure works as intended
 
 
+## Chapter 08: Dictionaries
+### Exercise 01: DNA translation (`ex01_dna_translation.py`)
+- [ ] Solve TypeError
+- [ ] Make code more readable - turn core logic into many helper functions?
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
