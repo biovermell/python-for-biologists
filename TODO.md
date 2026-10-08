@@ -75,6 +75,7 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Format all/most outputs as f-strings?
 - [ ] Annotate all functions?
 - [ ] Improve readability in all scripts by adding spaces and comments
+- [ ] Harmonize script structure comments (e. g. `# 1. CORE LOGIC`, `2. EXECUTION`, etc.)
 
 # Docs
 - [ ] Link to corresponding exercises in TODO
