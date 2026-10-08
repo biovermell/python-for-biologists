@@ -74,19 +74,31 @@ standard_code = {
 
 # HELPER FUNCTIONS
 def codon_checker(seq):
-    if len(seq) / 3 == 0:
-        pass
+    if len(seq) % 3 == 0:
+        return seq
     else:
         print(
             "Warning: Incomplete codons at the end of the sequence have been ommitted"
         )
+        return seq[: len(seq) - (len(seq) % 3)]
 
 
 # CORE LOGIC
 def dna_translation(seq):
-    pass
+    seq = codon_checker(seq)
+    number_of_codons = len(seq) - (len(seq) % 3)
+    codon_list = []
+    protein = ""
+    for number in range(0, number_of_codons, 3):
+        codon_list.append(seq[number : number + 3])
+    for codon in codon_list:
+        aa = standard_code.get(codon)
+        protein += aa
+    print(f"The amino acid sequence is {protein}")
 
 
 # EXECUTION
 with open("dna.txt", "r") as infile:
     seq = infile.readline().strip()
+    codon_checker(seq)
+    dna_translation(seq)
