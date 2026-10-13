@@ -8,8 +8,8 @@ This repository contains my solutions to the exercises from the book *Python for
 * **Chapter 04:** Lists and loops `Status: Completed`
 * **Chapter 05:** Writing our own functions `Status: Completed`
 * **Chapter 06:** Conditional tests `Status: Completed`
-* **Chapter 07:** Regular expressions
-* **Chapter 08:** Dictionaries
+* **Chapter 07:** Regular expressions `Status: Completed`
+* **Chapter 08:** Dictionaries `Status: Completed`
 * **Chapter 09:** Files, programs and user input
 
 ## Project management
