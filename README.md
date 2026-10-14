@@ -10,7 +10,7 @@ This repository contains my solutions to the exercises from the book *Python for
 * **Chapter 06:** Conditional tests `Status: Completed`
 * **Chapter 07:** Regular expressions `Status: Completed`
 * **Chapter 08:** Dictionaries `Status: Completed`
-* **Chapter 09:** Files, programs and user input
+* **Chapter 09:** Files, programs and user input `Status: Ongoing`
 
 ## Project management
 * [TODO.md](./TODO.md) tracks immediate refactoring tasks
