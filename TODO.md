@@ -70,6 +70,11 @@ This document tracks necessary improvements that fall within the scope of the ex
 - [ ] Solve TypeError
 - [ ] Make code more readable - turn core logic into many helper functions?
 
+## Chapter 09: Files, programs and input
+### Exercise 01: Binning DNA sequences (`ex01_binning_dna_sequences.py`)
+- [ ] Make directory creation dynamic to accommodate binning of sequences of arbitrary length (for now, it tops off at 1000+)
+
+
 # Repository-wide
 - [ ] Add unit testing?
 - [ ] Format all/most outputs as f-strings?
