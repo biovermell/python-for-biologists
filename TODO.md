@@ -72,7 +72,8 @@ This document tracks necessary improvements that fall within the scope of the ex
 
 ## Chapter 09: Files, programs and input
 ### Exercise 01: Binning DNA sequences (`ex01_binning_dna_sequences.py`)
-- [ ] Make directory creation dynamic to accommodate binning of sequences of arbitrary length (for now, it tops off at 1000+)
+- [ ] Ensure that nine folders are created, as specified in the instructions
+- [ ] Write code that moves each file to its correct folder
 
 
 # Repository-wide
