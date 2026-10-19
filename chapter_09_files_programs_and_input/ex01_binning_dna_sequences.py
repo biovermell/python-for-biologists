@@ -13,8 +13,17 @@ import os
 
 # import shutil
 
-# 1. ?
+# 1. FOLDER CREATION
 os.mkdir("./dna_bins/")
-for number in range(100, 1100, 100):
+for number in range(100, 1000, 100):
     bin_name = f"{number - 99} - {number}"
     os.makedirs(f"./dna_bins/{bin_name}")
+
+# 2. DNA BINNING
+for file in os.listdir("./dna_seqs"):
+    with open(file, "r") as infile:
+        for line in infile:
+            seq = line.strip().upper()    
+            length = len(seq)
+
+    
