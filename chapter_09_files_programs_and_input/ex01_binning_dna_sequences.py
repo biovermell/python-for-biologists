@@ -16,14 +16,21 @@ import os
 # 1. FOLDER CREATION
 os.mkdir("./dna_bins/")
 for number in range(100, 1000, 100):
-    bin_name = f"{number - 99} - {number}"
+    bin_name = f"{number}-{number + 99}"
     os.makedirs(f"./dna_bins/{bin_name}")
 
 # 2. DNA BINNING
+def dna_binning(length):
+    bin = length // 100 * 100
+    folder_name = f"{bin}-{bin + 99}"
+    return folder_name
+
+
+# 3. I/O
 for file in os.listdir("./dna_seqs"):
     with open(file, "r") as infile:
         for line in infile:
-            seq = line.strip().upper()    
+            seq = line.strip().upper()
             length = len(seq)
+            dna_binning(length)
 
-    
