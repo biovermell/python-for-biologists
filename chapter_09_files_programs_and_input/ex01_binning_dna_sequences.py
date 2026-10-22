@@ -10,13 +10,12 @@ separate file in the appropriate folder
 
 # 0. PREAMBLE
 import os
-import shutil
 
 # 1. FOLDER CREATION
 os.mkdir("./dna_bins/")
 for number in range(100, 1000, 100):
     bin_name = f"{number}-{number + 99}"
-    os.makedirs(f"./dna_bins/{bin_name}")
+    os.makedirs(os.path.join("./dna_bins", bin_name))
 
 
 # 2. DNA BINNING
@@ -26,15 +25,16 @@ def dna_binning(length):
     return folder_name
 
 
-
 # 3. I/O
+# To name the new files
+seq_number = 1
 for file in os.listdir("./dna_seqs"):
-    seq_number = 0
-    with open(file, "r") as infile:
+    file_path = "./dna_seqs/" + file
+    with open(file_path, "r") as infile:
         for line in infile:
             seq = line.strip().upper()
             length = len(seq)
             folder_name = dna_binning(length)
-            with open(f"seq_{seq_number + 1}", "w") as outfile:
+            with open(f"./dna_bins/{folder_name}/seq_{seq_number}.dna", "w") as outfile:
                 outfile.write(seq)
-                shutil.copy("./{outfile}", f"./dna_bins/{folder_name}")
+            seq_number += 1
