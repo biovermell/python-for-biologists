@@ -20,6 +20,10 @@ cutoff = int(sys.argv[2])
 # N. KMER MAKING
 def kmer_maker(seq, length):
     kmers = []
+    for number in range(0, len(seq) - (length - 1), 1):
+        kmer = seq[number : number + length]
+        kmers.append(kmer)
+        return kmers
 
 
 # N. FILE READING
